@@ -2,6 +2,8 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Azure.Storage.Console.Read", "Azure.Storage.Console.Read\Azure.Storage.Console.Read.csproj", "{D8C93F18-9F3B-4D52-BE5B-7A7E3B9908BD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Azure.Storage.Console.Write", "Azure.Storage.Console.Write\Azure.Storage.Console.Write.csproj", "{11218CA4-EECF-4D75-AC7E-1CF1AB0E9C59}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -12,5 +14,9 @@ Global
 		{D8C93F18-9F3B-4D52-BE5B-7A7E3B9908BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D8C93F18-9F3B-4D52-BE5B-7A7E3B9908BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D8C93F18-9F3B-4D52-BE5B-7A7E3B9908BD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{11218CA4-EECF-4D75-AC7E-1CF1AB0E9C59}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{11218CA4-EECF-4D75-AC7E-1CF1AB0E9C59}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{11218CA4-EECF-4D75-AC7E-1CF1AB0E9C59}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{11218CA4-EECF-4D75-AC7E-1CF1AB0E9C59}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

@@ -1,4 +1,5 @@
-﻿using System.Text.Json;
+﻿using System.Text;
+using System.Text.Json;
 using Azure.Storage.Queues;
 using Azure.Storage.Queues.Models;
 using Discord.Webhook;
@@ -33,12 +34,17 @@ while (true)
         break;
     foreach (QueueMessage message in retrievedMessages)
     {
-        Console.WriteLine($"Processed message: {message.Body.ToString()}");
-
-
+        byte[] byteArray = Convert.FromBase64String(message.Body.ToString());
+        string actualMessage = Encoding.UTF8.GetString(byteArray);
+        Console.WriteLine( "Processed message: "+actualMessage);
         var jsonObject = new
         {
-            Message = message,
+            MessageText = message.MessageText,
+            Body = message.Body.ToString(),
+            NextVisibleOn = message.NextVisibleOn,
+            InsertedOn = message.InsertedOn,
+            ExpiresOn = message.ExpiresOn,
+            ActualMesasage=actualMessage
         };
         var options = new JsonSerializerOptions
         {
